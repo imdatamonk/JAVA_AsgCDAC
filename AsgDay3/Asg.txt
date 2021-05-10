@@ -1,0 +1,63 @@
+Open TestBox.java & answer the questions asked in comments
+Revise the memory pictures along with the code.
+
+2. Open Box.java.
+2.1 Add another constructor to create a cube.
+2.2 Add a method to Box class to compare equality of 2 boxes.
+This method should return true if the dimensions of 2 boxes are same , 
+otherwise return false.
+(eg method name : checkEquality)
+
+3. Create TestBox2.java
+Prompt user for accepting 2 box dimensions & create 2 boxes.
+Invoke the checkEquality method & display "Same" if method returns true otherwise display "Different"
+Prompt user to accept a side of a cube.
+Display it's volume.
+
+4. Solve Tank assignment along with memory picture.
+
+What will be the output ?
+
+class Tank {
+  private int level;
+  Tank(int l)
+   {
+     level=l;
+   }
+  public void setLevel(int level1)
+  {
+    level=level1;
+  }
+  public int getLevel()
+  {
+    return level;
+  }
+}	
+
+public class Assignment {
+  public static void main(String[] args) {
+    Tank t1 = new Tank(10);
+    Tank t2 = new Tank(20);
+     s.o.p("1: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t1 = t2;
+    s.o.p("2: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t1.setLevel(27);
+     s.o.p("3: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t2.setLevel(t1.getLevel()+10);
+     s.o.p("4: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+  }
+}
+
+5. Create a Point class Point2D  for representing a point in x-y co-ordinate system.
+
+5.1 Create a parameterized constructor to accept x & y co-ords.
+
+5.2 Add public String show()) --to return point's x & y co-ords
+
+5.3 Add isEqual method to Point2D class : boolean returning method : must return true if both points are having same x,y co-ords or false otherwise. : 
+
+5.4 Write a Tester class to test your functionality
