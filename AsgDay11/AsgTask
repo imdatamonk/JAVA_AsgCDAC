@@ -1,0 +1,22 @@
+1. Continue with earlier  Customer class , validation rules, custom exception (Make a separate copy)
+Customer's Unique ID : email (Override equals method suitably)
+
+Create CustomerManagementSystem as a tester application
+Store customer details in the suitable ArrayList.
+
+Options
+1. Register new customer
+(Rule : Should not allow to add customers with duplicate email.)
+
+2. Customer Login
+I/P : email & password
+Throw custom exception , in case of invalid login
+
+3. Change Password
+I/P : email , old password , new password
+Throw custom exception , in case of invalid login
+In case of valid login , change password
+
+4. Un subscribe customer
+I/P  : email
+
